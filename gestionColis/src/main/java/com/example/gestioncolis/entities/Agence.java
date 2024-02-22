@@ -16,6 +16,12 @@ public class Agence {
         this.login = login;
         this.password = password;
     }
+    public Agence(String quartier, String ville, String login, String password) {
+        this.quartier = quartier;
+        this.ville = ville;
+        this.login = login;
+        this.password = password;
+    }
 
     // Getters et setters (si nécessaire)
     public int getId() {

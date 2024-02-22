@@ -20,7 +20,7 @@
          <left>
             <AnchorPane prefHeight="602.0" prefWidth="323.0" BorderPane.alignment="CENTER">
                <children>
-                  <AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="592.0" prefWidth="314.0" style="-fx-background-color: ccc;" visible="false">
+                  <AnchorPane layoutX="4.0" layoutY="5.0" prefHeight="592.0" prefWidth="314.0" style="-fx-background-color: ccc;">
                      <children>
                         <Label layoutX="65.0" layoutY="44.0" text="GESTION DES COLIS">
                            <font>
@@ -42,14 +42,15 @@
                         <RadioButton layoutX="120.0" layoutY="541.0" mnemonicParsing="false" text="Attendus" />
                      </children>
                   </AnchorPane>
-                  <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="590.0" prefWidth="309.0" style="-fx-background-color: ccc;">
+                  <AnchorPane layoutX="7.0" layoutY="6.0" prefHeight="590.0" prefWidth="309.0" style="-fx-background-color: ccc;" visible="false">
                      <children>
                         <Label layoutX="104.0" layoutY="42.0" text="ITINERAIRE">
                            <font>
                               <Font name="SansSerif Regular" size="18.0" />
                            </font>
                         </Label>
-                        <ListView layoutX="8.0" layoutY="74.0" prefHeight="347.0" prefWidth="293.0" />
+                        <ListView fx:id="ListView" layoutX="8.0" layoutY="74.0" prefHeight="347.0" prefWidth="293.0" />
+                        <Button fx:id="btnValider" layoutX="14.0" layoutY="450.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="282.0" text="Valider L'Itineraire" />
                      </children>
                   </AnchorPane>
                </children>

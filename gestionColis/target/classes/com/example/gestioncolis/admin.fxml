@@ -1,107 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
-<?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestioncolis.service.AdminController">
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="602.0" prefWidth="1195.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestioncolis.service.AdminController">
    <children>
-      <BorderPane prefHeight="600.0" prefWidth="1000.0">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
          <left>
-            <Pane prefHeight="600.0" prefWidth="274.0" style="-fx-background-color: #ddd;" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="602.0" prefWidth="359.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button layoutX="20.0" layoutY="139.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="234.0" text="Ajouter Agence">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/Plus.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="20.0" layoutY="226.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="234.0" text="Modifier Agence">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/Edit.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="20.0" layoutY="409.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="234.0" text="Mot de passe">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/Password.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="20.0" layoutY="316.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="234.0" text="Supprimer Agence">
-                     <font>
-                        <Font size="20.0" />
-                     </font>
-                     <graphic>
-                        <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/TrashCan.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="182.0" layoutY="27.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="11.0">
-                     <graphic>
-                        <ImageView fitHeight="51.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/Home.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
-                  <Button layoutX="20.0" layoutY="27.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="39.0">
-                     <graphic>
-                        <ImageView fitHeight="48.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../../../logos/Cancel.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                  </Button>
+                  <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="594.0" prefWidth="351.0" style="-fx-background-color: ccc;">
+                     <children>
+                        <Label layoutX="136.0" layoutY="88.0" text="AGENCE">
+                           <font>
+                              <Font name="SansSerif Bold" size="18.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="TextfieldID" layoutX="25.0" layoutY="141.0" prefHeight="38.0" prefWidth="302.0" promptText="ID" />
+                        <TextField fx:id="TextfieldQuartier" layoutX="24.0" layoutY="198.0" prefHeight="38.0" prefWidth="302.0" promptText="QUARTIER" />
+                        <TextField fx:id="TextFiledVille" layoutX="24.0" layoutY="256.0" prefHeight="38.0" prefWidth="302.0" promptText="VILLE" />
+                        <TextField fx:id="TextFieldLogin" layoutX="24.0" layoutY="318.0" prefHeight="38.0" prefWidth="302.0" promptText="LOGIN" />
+                        <TextField fx:id="TextFieldPassword" layoutX="24.0" layoutY="377.0" prefHeight="38.0" prefWidth="302.0" promptText="PASSWORD" />
+                        <Button fx:id="btnAjouter" layoutX="48.0" layoutY="453.0" mnemonicParsing="false" onAction="#ajouterAgence" prefHeight="42.0" prefWidth="100.0" text="Ajouter" />
+                        <Button fx:id="btnModifier" layoutX="204.0" layoutY="453.0" mnemonicParsing="false" onAction="#modifierAgence" prefHeight="42.0" prefWidth="100.0" text="Modifier" />
+                        <Button fx:id="btnAnnuler" layoutX="48.0" layoutY="506.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="Annuler" />
+                        <Button fx:id="btnSupprimer" layoutX="204.0" layoutY="506.0" mnemonicParsing="false" onAction="#supprimerAgence" prefHeight="42.0" prefWidth="100.0" text="Supprimer" />
+                     </children>
+                  </AnchorPane>
                </children>
-            </Pane>
+            </AnchorPane>
          </left>
          <center>
-            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
                <children>
-                  <VBox prefHeight="600.0" prefWidth="728.0">
+                  <AnchorPane layoutX="4.0" layoutY="4.0" prefHeight="594.0" prefWidth="828.0" style="-fx-background-color: ccc;">
                      <children>
-                        <TableView prefHeight="200.0" prefWidth="200.0">
+                        <TableView fx:id="tableView" layoutX="4.0" layoutY="4.0" prefHeight="586.0" prefWidth="819.0">
                           <columns>
-                            <TableColumn prefWidth="75.0" text="C1" />
-                            <TableColumn prefWidth="75.0" text="C2" />
+                            <TableColumn fx:id="TableColumnID" prefWidth="107.99997234344482" text="ID" />
+                              <TableColumn fx:id="TableColumnQuartier" prefWidth="162.3999481201172" text="QUARTIER" />
+                              <TableColumn fx:id="TableColumnVille" prefWidth="160.800048828125" text="VILLE" />
+                              <TableColumn fx:id="TableColumnLogin" prefWidth="190.4000244140625" text="LOGIN" />
+                              <TableColumn fx:id="TableColumnPassword" prefWidth="196.0001220703125" text="PASSWORD" />
                           </columns>
                         </TableView>
                      </children>
-                  </VBox>
+                  </AnchorPane>
                </children>
-            </Pane>
+            </AnchorPane>
          </center>
       </BorderPane>
    </children>
-</AnchorPane>
+</StackPane>
