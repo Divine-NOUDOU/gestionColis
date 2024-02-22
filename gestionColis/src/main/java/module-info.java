@@ -10,4 +10,5 @@ module com.example.gestioncolis {
     exports com.example.gestioncolis;
     exports com.example.gestioncolis.service;
     opens com.example.gestioncolis.service to javafx.fxml;
+    opens com.example.gestioncolis.entities to javafx.base;
 }
