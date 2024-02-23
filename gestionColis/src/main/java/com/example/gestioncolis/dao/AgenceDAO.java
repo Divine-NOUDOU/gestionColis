@@ -15,6 +15,7 @@ public class AgenceDAO {
 
     public void create(Agence agence) throws SQLException {
         String query = "INSERT INTO agence (quartier, ville, login, password) VALUES (?, ?, ?, ?)";
+
         try (PreparedStatement statement = connection.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)) {
             statement.setString(1, agence.getQuartier());
             statement.setString(2, agence.getVille());

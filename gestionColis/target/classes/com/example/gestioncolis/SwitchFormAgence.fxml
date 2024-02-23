@@ -19,32 +19,27 @@
                <children>
                   <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="430.0" prefWidth="244.0" style="-fx-background-color: ccc;">
                      <children>
-                        <Label layoutX="92.0" layoutY="96.0" text="AGENCE">
+                        <Label layoutX="58.0" layoutY="139.0" text="ADMINISTRATEUR">
                            <font>
                               <Font name="SansSerif Bold" size="14.0" />
                            </font>
                         </Label>
-                        <Button fx:id="btnEnregistrer" layoutX="24.0" layoutY="151.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Enregistrer Colis">
+                        <Button fx:id="btnAgence" layoutX="24.0" layoutY="194.0" mnemonicParsing="false" onAction="#suivant" prefHeight="26.0" prefWidth="195.0" text="Gestion Des Agences">
                            <font>
                               <Font name="SansSerif Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="btnEnvoyer" layoutX="24.0" layoutY="197.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Envoyer Colis">
+                        <Button fx:id="btnType" layoutX="24.0" layoutY="240.0" mnemonicParsing="false" onAction="#nature" prefHeight="26.0" prefWidth="195.0" text="Gestions Des Types De Colis">
                            <font>
                               <Font name="SansSerif Bold" size="12.0" />
                            </font>
                         </Button>
-                        <Button fx:id="btnRecevoir" layoutX="24.0" layoutY="244.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="195.0" text="Recevoir Colis">
-                           <font>
-                              <Font name="SansSerif Bold" size="12.0" />
-                           </font>
-                        </Button>
-                        <ImageView fx:id="btnHome" fitHeight="40.0" fitWidth="51.0" layoutX="179.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="btnHome" fitHeight="40.0" fitWidth="51.0" layoutX="179.0" layoutY="25.0" onMouseClicked="#Home" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../logos/Home.png" />
                            </image>
                         </ImageView>
-                        <ImageView fx:id="btnRetour" fitHeight="38.0" fitWidth="40.0" layoutX="24.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="btnRetour" fitHeight="38.0" fitWidth="40.0" layoutX="24.0" layoutY="25.0" onMouseClicked="#retour" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../../../logos/Cancel.png" />
                            </image>

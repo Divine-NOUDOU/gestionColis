@@ -26,9 +26,9 @@
                         </Label>
                         <TextField fx:id="textFieldNumeroType" layoutX="17.0" layoutY="235.0" prefHeight="38.0" prefWidth="302.0" promptText="Numero Type" />
                         <TextField fx:id="textFieldNomType" layoutX="17.0" layoutY="292.0" prefHeight="38.0" prefWidth="302.0" promptText="Type" />
-                        <Button fx:id="btnAjouter" layoutX="33.0" layoutY="362.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Ajouter" />
-                        <Button fx:id="btnModifier" layoutX="185.0" layoutY="362.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Modifier" />
-                        <Button fx:id="btnAnnuler" layoutX="32.0" layoutY="422.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Annuler" />
+                        <Button fx:id="btnAjouter" layoutX="33.0" layoutY="362.0" onAction="#ajouterAgence" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Ajouter" />
+                        <Button fx:id="btnModifier" layoutX="185.0" layoutY="362.0" onAction="#modifierAgence" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Modifier" />
+                        <Button fx:id="btnAnnuler" layoutX="32.0" layoutY="422.0" onAction="#suivant" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Annuler" />
                         <Button fx:id="btnSupprimer" layoutX="184.0" layoutY="422.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="114.0" text="Supprimer" />
                      </children>
                   </AnchorPane>

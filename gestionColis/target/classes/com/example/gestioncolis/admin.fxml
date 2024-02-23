@@ -31,7 +31,7 @@
                         <TextField fx:id="TextFieldPassword" layoutX="24.0" layoutY="377.0" prefHeight="38.0" prefWidth="302.0" promptText="PASSWORD" />
                         <Button fx:id="btnAjouter" layoutX="48.0" layoutY="453.0" mnemonicParsing="false" onAction="#ajouterAgence" prefHeight="42.0" prefWidth="100.0" text="Ajouter" />
                         <Button fx:id="btnModifier" layoutX="204.0" layoutY="453.0" mnemonicParsing="false" onAction="#modifierAgence" prefHeight="42.0" prefWidth="100.0" text="Modifier" />
-                        <Button fx:id="btnAnnuler" layoutX="48.0" layoutY="506.0" mnemonicParsing="false" prefHeight="42.0" prefWidth="100.0" text="Annuler" />
+                        <Button fx:id="btnAnnuler" layoutX="48.0" layoutY="506.0" mnemonicParsing="false" onAction="#suivant" prefHeight="42.0" prefWidth="100.0" text="Retour" />
                         <Button fx:id="btnSupprimer" layoutX="204.0" layoutY="506.0" mnemonicParsing="false" onAction="#supprimerAgence" prefHeight="42.0" prefWidth="100.0" text="Supprimer" />
                      </children>
                   </AnchorPane>
